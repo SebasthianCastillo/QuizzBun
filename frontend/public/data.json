@@ -1,0 +1,107 @@
+[
+  {
+    "id": "q1",
+    "category": "Jugabilidad",
+    "difficulty": "hard",
+    "question": "¿Cuántos segundos dura exactamente el efecto de visión otorgado por el Heraldo de la Grieta al ser invocado?",
+    "options": ["10 segundos", "15 segundos", "20 segundos", "25 segundos"],
+    "correctAnswer": 1,
+    "explanation": "El Heraldo otorga visión durante 15 segundos tras ser invocado."
+  },
+  {
+    "id": "q2",
+    "category": "Mecánicas",
+    "difficulty": "hard",
+    "question": "¿Qué estadística aumenta el daño verdadero de la pasiva de Vayne?",
+    "options": [
+      "Daño de ataque",
+      "Velocidad de ataque",
+      "Probabilidad de crítico",
+      "Letalidad"
+    ],
+    "correctAnswer": 1,
+    "explanation": "El daño verdadero de Vayne escala con la velocidad de ataque."
+  },
+  {
+    "id": "q3",
+    "category": "Objetos",
+    "difficulty": "hard",
+    "question": "¿Cuál de estos objetos NO proporciona ninguna forma de robo de vida u omnivamp?",
+    "options": [
+      "Hidra Voraz",
+      "Sanguinaria",
+      "Filo Infinito",
+      "Hoja del Rey Arruinado"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Filo Infinito no ofrece ninguna fuente de robo de vida."
+  },
+  {
+    "id": "q4",
+    "category": "Campeones",
+    "difficulty": "hard",
+    "question": "¿Qué campeón fue el primero en introducir una habilidad que copiaba la definitiva de otro campeón?",
+    "options": ["Sylas", "Neeko", "Viego", "Mordekaiser"],
+    "correctAnswer": 0,
+    "explanation": "Sylas fue el primer campeón con la capacidad de robar definitivas."
+  },
+  {
+    "id": "q5",
+    "category": "Temporadas",
+    "difficulty": "hard",
+    "question": "¿En qué temporada se introdujeron los dragones elementales?",
+    "options": ["Temporada 4", "Temporada 5", "Temporada 6", "Temporada 7"],
+    "correctAnswer": 1,
+    "explanation": "Los dragones elementales se introdujeron en la Temporada 5."
+  },
+  {
+    "id": "q6",
+    "category": "Lore",
+    "difficulty": "hard",
+    "question": "¿Qué entidad está directamente relacionada con la creación de Mordekaiser según el lore actual?",
+    "options": [
+      "El Vacío",
+      "El Reino Espiritual",
+      "La Muerte misma",
+      "Los Aspectos de Targon"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mordekaiser domina la muerte y creó su propio reino más allá de ella."
+  },
+  {
+    "id": "q7",
+    "category": "Mecánicas",
+    "difficulty": "hard",
+    "question": "¿Qué tipo de control de masas NO puede ser limpiado con el hechizo de invocador Limpiar?",
+    "options": ["Enraizamiento", "Silencio", "Supresión", "Ceguera"],
+    "correctAnswer": 2,
+    "explanation": "La supresión no puede ser eliminada con Limpiar."
+  },
+  {
+    "id": "q8",
+    "category": "Mapa",
+    "difficulty": "hard",
+    "question": "¿Cuántas placas de torreta existen antes de que caigan automáticamente?",
+    "options": ["3", "4", "5", "6"],
+    "correctAnswer": 2,
+    "explanation": "Las torretas tienen 5 placas antes de caer."
+  },
+  {
+    "id": "q9",
+    "category": "Campeones",
+    "difficulty": "hard",
+    "question": "¿Qué campeón obtiene alcance adicional permanente al subir de nivel?",
+    "options": ["Kindred", "Tristana", "Senna", "Bel'Veth"],
+    "correctAnswer": 1,
+    "explanation": "Tristana gana alcance adicional con cada nivel."
+  },
+  {
+    "id": "q10",
+    "category": "Objetivos",
+    "difficulty": "hard",
+    "question": "¿Cuántas almas de dragón elementales existen actualmente?",
+    "options": ["3", "4", "5", "6"],
+    "correctAnswer": 3,
+    "explanation": "Existen 6 almas elementales diferentes."
+  }
+]
