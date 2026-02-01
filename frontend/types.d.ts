@@ -6,4 +6,6 @@ export interface Questions {
   options: string[];
   correctAnswer: number;
   explanation?: string;
+  isCorrectAnswer?: boolean;
+  userSelectedAnswer?: number;
 }

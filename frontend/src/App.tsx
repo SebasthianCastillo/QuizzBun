@@ -6,10 +6,12 @@ import { useQuestionStore } from "./store/useQuestionsStore";
 function App() {
   const questions = useQuestionStore((state) => state.questions);
   return (
-    <>
+    
+     <>
       {questions.length === 0 && <Start />}
       {questions.length > 0 && <Game />}
-    </>
+      </>
+  
   );
 }
 

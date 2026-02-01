@@ -4,6 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 import { defineConfig, globalIgnores } from 'eslint/config'
+import cspell from '@cspell/eslint-plugin'
 
 export default defineConfig([
   globalIgnores(['dist']),
@@ -15,9 +16,19 @@ export default defineConfig([
       reactHooks.configs.flat.recommended,
       reactRefresh.configs.vite,
     ],
+    plugins: {
+      '@cspell': cspell
+    },
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
+    },
+    rules: {
+      '@cspell/spellchecker': ['warn', {
+        checkScope: ['comment'],
+        language: 'en,es',
+        autoFix: false
+      }]
     },
   },
 ])
