@@ -12,9 +12,35 @@ export default function Game() {
   const previusQuestion = useQuestionStore((state) => state.goPreviusQuestion);
   const isGameComplete = useQuestionStore((state) => state.isGameComplete);
   const questionInfo = questions[currentQuestion];
+  const name = useQuestionStore((state) => state.name);
+  const correctAnswers = questions.filter((q) => q.isCorrectAnswer).length;
+  const totalQuestions = questions.length;
+  const scorePercentage =
+    totalQuestions > 0 ? (correctAnswers / totalQuestions) * 100 : 0;
+  const scoreUser = async (scoreUser: { name: string, score: string }) => {
+    try {
+      const response = await fetch("http://localhost:3000/addScore/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(scoreUser),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to create user")
+      }
+
+      return response.json()
+    } catch (error) {
+      console.error("Error saving score:", error);
+    }
+  }
 
   // Show Score component when game is complete
   if (isGameComplete) {
+    // Save score before showing results
+    scoreUser({ name: name, score: scorePercentage.toString() });
     return <Score />;
   }
 
