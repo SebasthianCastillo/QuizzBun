@@ -3,7 +3,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "cd backend && bun start",
-    "healthcheckPath": "/getScore"
+    "startCommand": "cd backend && bun start"
+  
   }
 }
