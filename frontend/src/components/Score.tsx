@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "@/components/ui/button";
 import { useQuestionStore } from "../store/useQuestionsStore";
 import { Trophy, Target, RotateCcw } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "React";
 
 export default function Score() {
   const questions = useQuestionStore((state) => state.questions);
