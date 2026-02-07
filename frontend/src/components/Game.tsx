@@ -17,7 +17,7 @@ export default function Game() {
   const totalQuestions = questions.length;
   const scorePercentage =
     totalQuestions > 0 ? (correctAnswers / totalQuestions) * 100 : 0;
-const scoreUser = async (scoreUser: { name: string, score: string }) => {
+  const scoreUser = async (scoreUser: { name: string, score: string }) => {
     try {
       const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
       const response = await fetch(`${API_URL}/addScore`, {
