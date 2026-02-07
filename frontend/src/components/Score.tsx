@@ -19,7 +19,8 @@ export default function Score() {
 
   const getUser = async () => {
     try {
-      const res = await fetch(`http://localhost:3000/getScore`);
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+      const res = await fetch(`${API_URL}/getScore`);
 
       if (!res.ok) {
         const error = await res.json();

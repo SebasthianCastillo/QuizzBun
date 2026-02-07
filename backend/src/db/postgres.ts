@@ -1,16 +1,15 @@
-import pkg from "pg";
-const { Pool } = pkg;
+import { Pool } from 'pg';
 
-const user = process.env.DB_USER || "postgres";
-const password = process.env.DB_PASSWORD || "bombazo";
-
-console.log("Connecting with:", { user, password: typeof password });
+// Use DATABASE_URL if available, otherwise fall back to individual variables
+const connectionString = process.env.DATABASE_URL;
 
 export const pool = new Pool({
-  host: process.env.DB_HOST || "localhost",
-  port: Number(process.env.DB_PORT) || 5432,
-  database: process.env.DB_NAME || "quizz",
-  user, // obligatorio usar el valor forzado
-  password, // obligatorio usar el valor forzado
-  ssl: false,
+  connectionString: connectionString,
+  // Fallback to individual variables if DATABASE_URL not set
+  host: process.env.DB_HOST || 'localhost',
+  port: parseInt(process.env.DB_PORT || '5432'),
+  database: process.env.DB_NAME || 'quizz',
+  user: process.env.DB_USER || 'postgres',
+  password: process.env.DB_PASSWORD || '',
+  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
 });

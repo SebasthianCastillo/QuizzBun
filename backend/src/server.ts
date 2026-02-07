@@ -6,14 +6,17 @@ import cors from "cors";
 
 const app = express();
 app.use(express.json());
-app.use(cors());
 
-app.use(
-  cors({
-    origin: "*", // or restrict to your app origin if needed
-    allowedHeaders: ["Content-Type", "Authorization"], // VERY IMPORTANT
-  })
-);
+// Updated CORS configuration for production
+app.use(cors({
+  origin: process.env.NODE_ENV === 'production' 
+    ? ['https://quizzbun.vercel.app', 'https://quizzbun-api.railway.app']
+    : '*',
+  credentials: true
+}));
+
+// Production port handling
+const PORT = process.env.PORT || 3000;
 
 app.post("/addScore", async (req, res) => {
   try {
@@ -42,6 +45,6 @@ app.get("/getScore", async (req, res) => {
 pool.query("SELECT 1");
 console.log("PostgreSQL connected");
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

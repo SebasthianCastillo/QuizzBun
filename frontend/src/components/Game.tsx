@@ -17,25 +17,26 @@ export default function Game() {
   const totalQuestions = questions.length;
   const scorePercentage =
     totalQuestions > 0 ? (correctAnswers / totalQuestions) * 100 : 0;
-  const scoreUser = async (scoreUser: { name: string, score: string }) => {
+const scoreUser = async (scoreUser: { name: string, score: string }) => {
     try {
-      const response = await fetch("http://localhost:3000/addScore/", {
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+      const response = await fetch(`${API_URL}/addScore`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(scoreUser),
-      })
+      });
 
       if (!response.ok) {
-        throw new Error("Failed to create user")
+        throw new Error("Failed to create user");
       }
 
-      return response.json()
+      return response.json();
     } catch (error) {
       console.error("Error saving score:", error);
     }
-  }
+  };
 
   // Show Score component when game is complete
   if (isGameComplete) {

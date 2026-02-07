@@ -1,6 +1,9 @@
 import { create } from "zustand";
 import type { Questions } from ".././../types";
 
+// Environment variables
+const DATA_URL = import.meta.env.VITE_DATA_URL || 'http://localhost:5173';
+
 interface questionStore {
   questions: Questions[];
   currentQuestion: number;
@@ -25,7 +28,7 @@ export const useQuestionStore = create<questionStore>((set, get) => {
     clearName: () => set({ name: "" }),
     fetchQuestions: async () => {
       try {
-        const response = await fetch("http://localhost:5173/data.json");
+        const response = await fetch(`${DATA_URL}/data.json`);
         if (!response.ok) throw "error fetching data";
         const questions = await response.json();
         set({ questions });
