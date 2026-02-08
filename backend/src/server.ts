@@ -8,12 +8,34 @@ const app = express();
 app.use(express.json());
 
 // Updated CORS configuration for production
+// app.use(cors({
+//   origin: process.env.NODE_ENV === 'production'
+//     ? ['https://quizz-bun-frontend-jfwq.vercel.app/', 'backend-production-04b0.up.railway.app']
+//     : '*',
+//   credentials: true
+// }));
+
+const allowedOrigins = [
+  'https://quizz-bun-frontend-jfwq.vercel.app',
+  'http://localhost:5173'
+];
+
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production'
-    ? ['https://quizz-bun-frontend-jfwq.vercel.app/', 'backend-production-04b0.up.railway.app']
-    : '*',
-  credentials: true
+  origin: (origin, callback) => {
+    if (!origin) return callback(null, true); // Postman / mobile / SSR
+
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+
+    return callback(new Error('Not allowed by CORS'));
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
+app.options('*', cors());
 
 // Production port handling
 const PORT = process.env.PORT || 3000;
