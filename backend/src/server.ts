@@ -17,7 +17,7 @@ app.use(cors({
 }));
 
 
-app.options('*', cors());
+
 
 // Production port handling
 const PORT = process.env.PORT || 3000;
