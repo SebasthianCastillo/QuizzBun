@@ -28,7 +28,7 @@ export const useQuestionStore = create<questionStore>((set, get) => {
     clearName: () => set({ name: "" }),
     fetchQuestions: async () => {
       try {
-        const response = await fetch(`${DATA_URL}/data.json`);
+        const response = await fetch(`${DATA_URL}`);
         if (!response.ok) throw "error fetching data";
         const questions = await response.json();
         set({ questions });
