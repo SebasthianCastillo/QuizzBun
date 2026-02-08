@@ -66,7 +66,9 @@ export default function Game() {
   if (isGameComplete && scoreSaved) {
     return <Score />;
   }
-
+  if (Loading) {
+    return "cargando..."; // opcional, mientras se guarda
+  }
   const progressPercentage =
     questions.length > 0 ? ((currentQuestion + 1) / questions.length) * 100 : 0;
 
