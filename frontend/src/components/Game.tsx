@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useQuestionStore } from "../store/useQuestionsStore";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react"
 
 export default function Game() {
   const questions = useQuestionStore((state) => state.questions);
@@ -17,7 +18,10 @@ export default function Game() {
   const totalQuestions = questions.length;
   const scorePercentage =
     totalQuestions > 0 ? (correctAnswers / totalQuestions) * 100 : 0;
+  const [Loading, setLoading] = useState(false)
+  const [scoreSaved, setScoreSaved] = useState(false);
   const scoreUser = async (scoreUser: { name: string, score: string }) => {
+    setLoading(true)
     try {
       const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
       const response = await fetch(`${API_URL}/addScore`, {
@@ -35,13 +39,31 @@ export default function Game() {
       return response.json();
     } catch (error) {
       console.error("Error saving score:", error);
+    } finally {
+      setLoading(false)
     }
   };
 
   // Show Score component when game is complete
-  if (isGameComplete) {
-    // Save score before showing results
-    scoreUser({ name: name, score: scorePercentage.toString() });
+  useEffect(() => {
+    if (isGameComplete) {
+      const saveScore = async () => {
+        setLoading(true);
+        try {
+          await scoreUser({ name, score: scorePercentage.toString() });
+          setScoreSaved(true);
+        } catch (err) {
+          console.error(err);
+        } finally {
+          setLoading(false);
+        }
+      };
+
+      saveScore();
+    }
+  }, [isGameComplete]);
+
+  if (isGameComplete && scoreSaved) {
     return <Score />;
   }
 

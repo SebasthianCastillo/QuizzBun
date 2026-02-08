@@ -13,7 +13,7 @@ app.use(cors({
     ? ['https://quizz-bun-frontend-jfwq.vercel.app', 'https://backend-production-04b0.up.railway.app']
     : '*',
   credentials: true,
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: process.env.NODE_ENV === 'production' ? ['Content-Type', 'Authorization'] : '*'
 }));
 
 
