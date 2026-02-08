@@ -10,7 +10,7 @@ app.use(express.json());
 // Updated CORS configuration for production
 app.use(cors({
   origin: process.env.NODE_ENV === 'production'
-    ? ['https://quizzbun.vercel.app', 'backend-production-04b0.up.railway.app']
+    ? ['https://quizz-bun-frontend-jfwq.vercel.app/', 'backend-production-04b0.up.railway.app']
     : '*',
   credentials: true
 }));
