@@ -1,107 +1,142 @@
 [
   {
     "id": "q1",
-    "category": "Jugabilidad",
+    "category": "Macro",
     "difficulty": "hard",
-    "question": "¿Cuántos segundos dura exactamente el efecto de visión otorgado por el Heraldo de la Grieta al ser invocado?",
-    "options": ["10 segundos", "15 segundos", "20 segundos", "25 segundos"],
+    "question": "¿Cuál es la razón estratégica principal para hacer 'slow push' antes de rotar a un objetivo neutral?",
+    "options": [
+      "Para evitar que los súbditos den experiencia",
+      "Para crear presión en el mapa y forzar respuesta enemiga",
+      "Para que el jungla consiga más oro",
+      "Para reiniciar la oleada rápidamente"
+    ],
     "correctAnswer": 1,
-    "explanation": "El Heraldo otorga visión durante 15 segundos tras ser invocado."
+    "explanation": "El slow push acumula súbditos y genera presión en la línea, obligando al enemigo a defender mientras tu equipo rota a objetivos."
   },
   {
     "id": "q2",
     "category": "Mecánicas",
     "difficulty": "hard",
-    "question": "¿Qué estadística aumenta el daño verdadero de la pasiva de Vayne?",
+    "question": "¿Qué ocurre cuando aplicas múltiples efectos de control de masas del mismo tipo con rendimientos decrecientes?",
     "options": [
-      "Daño de ataque",
-      "Velocidad de ataque",
-      "Probabilidad de crítico",
-      "Letalidad"
+      "Se duplican en duración",
+      "El segundo se ignora completamente",
+      "Se reduce progresivamente la duración",
+      "Se convierten en daño verdadero"
     ],
-    "correctAnswer": 1,
-    "explanation": "El daño verdadero de Vayne escala con la velocidad de ataque."
+    "correctAnswer": 2,
+    "explanation": "Algunos efectos de control repetidos sufren rendimientos decrecientes, reduciendo su duración efectiva."
   },
   {
     "id": "q3",
-    "category": "Objetos",
+    "category": "Vision",
     "difficulty": "hard",
-    "question": "¿Cuál de estos objetos NO proporciona ninguna forma de robo de vida u omnivamp?",
+    "question": "¿Cuál es el propósito principal de colocar visión profunda en la jungla enemiga durante mid game?",
     "options": [
-      "Hidra Voraz",
-      "Sanguinaria",
-      "Filo Infinito",
-      "Hoja del Rey Arruinado"
+      "Solo obtener asistencias",
+      "Rastrear rotaciones y preparar picks o objetivos",
+      "Evitar que aparezcan monstruos neutrales",
+      "Aumentar el daño del equipo"
     ],
-    "correctAnswer": 2,
-    "explanation": "Filo Infinito no ofrece ninguna fuente de robo de vida."
+    "correctAnswer": 1,
+    "explanation": "La visión profunda permite anticipar movimientos enemigos y preparar emboscadas u objetivos."
   },
   {
     "id": "q4",
-    "category": "Campeones",
+    "category": "Wave Management",
     "difficulty": "hard",
-    "question": "¿Qué campeón fue el primero en introducir una habilidad que copiaba la definitiva de otro campeón?",
-    "options": ["Sylas", "Neeko", "Viego", "Mordekaiser"],
-    "correctAnswer": 0,
-    "explanation": "Sylas fue el primer campeón con la capacidad de robar definitivas."
+    "question": "¿Qué condición suele ser necesaria para mantener un freeze cerca de tu torre?",
+    "options": [
+      "Tener más súbditos que el rival",
+      "Eliminar todos los súbditos magos",
+      "Mantener una ligera desventaja de súbditos enemigos",
+      "Usar habilidades constantemente"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Un freeze se mantiene dejando más súbditos enemigos vivos para que la oleada permanezca cerca de tu torre."
   },
   {
     "id": "q5",
-    "category": "Temporadas",
+    "category": "Objetos",
     "difficulty": "hard",
-    "question": "¿En qué temporada se introdujeron los dragones elementales?",
-    "options": ["Temporada 4", "Temporada 5", "Temporada 6", "Temporada 7"],
+    "question": "¿Qué ventaja principal aporta la penetración de armadura porcentual frente a objetivos con mucha defensa?",
+    "options": [
+      "Reduce la velocidad de ataque enemiga",
+      "Ignora un porcentaje de la armadura total",
+      "Aumenta el robo de vida",
+      "Convierte daño físico en mágico"
+    ],
     "correctAnswer": 1,
-    "explanation": "Los dragones elementales se introdujeron en la Temporada 5."
+    "explanation": "La penetración porcentual escala mejor contra enemigos con altos valores de armadura."
   },
   {
     "id": "q6",
-    "category": "Lore",
+    "category": "Macro",
     "difficulty": "hard",
-    "question": "¿Qué entidad está directamente relacionada con la creación de Mordekaiser según el lore actual?",
+    "question": "¿Cuál es el riesgo principal de hacer split push sin visión adecuada del mapa?",
     "options": [
-      "El Vacío",
-      "El Reino Espiritual",
-      "La Muerte misma",
-      "Los Aspectos de Targon"
+      "Perder experiencia pasiva",
+      "Forzar objetivos neutrales automáticamente",
+      "Ser colapsado por múltiples enemigos",
+      "Reducir el daño a torres"
     ],
     "correctAnswer": 2,
-    "explanation": "Mordekaiser domina la muerte y creó su propio reino más allá de ella."
+    "explanation": "Sin visión, el split pusher puede ser rodeado fácilmente por rotaciones enemigas."
   },
   {
     "id": "q7",
-    "category": "Mecánicas",
+    "category": "Teamfights",
     "difficulty": "hard",
-    "question": "¿Qué tipo de control de masas NO puede ser limpiado con el hechizo de invocador Limpiar?",
-    "options": ["Enraizamiento", "Silencio", "Supresión", "Ceguera"],
-    "correctAnswer": 2,
-    "explanation": "La supresión no puede ser eliminada con Limpiar."
+    "question": "¿Qué significa 'peel' en una pelea de equipo?",
+    "options": [
+      "Ignorar al carry enemigo",
+      "Proteger a tus aliados clave del daño o engages",
+      "Dividir al equipo en dos grupos",
+      "Iniciar la pelea con todo el equipo"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Peel consiste en usar habilidades para mantener a salvo a tus carries de amenazas enemigas."
   },
   {
     "id": "q8",
-    "category": "Mapa",
+    "category": "Jungla",
     "difficulty": "hard",
-    "question": "¿Cuántas placas de torreta existen antes de que caigan automáticamente?",
-    "options": ["3", "4", "5", "6"],
-    "correctAnswer": 2,
-    "explanation": "Las torretas tienen 5 placas antes de caer."
+    "question": "¿Qué ventaja estratégica ofrece un 'counter jungle' exitoso en early game?",
+    "options": [
+      "Reduce el cooldown de habilidades",
+      "Niega recursos al rival y crea ventaja de tempo",
+      "Aumenta la vida máxima del equipo",
+      "Revela permanentemente al jungla enemigo"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Robar campamentos reduce el oro y experiencia del jungla rival y acelera tu ventaja."
   },
   {
     "id": "q9",
-    "category": "Campeones",
+    "category": "Objetivos",
     "difficulty": "hard",
-    "question": "¿Qué campeón obtiene alcance adicional permanente al subir de nivel?",
-    "options": ["Kindred", "Tristana", "Senna", "Bel'Veth"],
+    "question": "¿Cuál es una señal común para iniciar Barón Nashor con seguridad relativa?",
+    "options": [
+      "Todos los enemigos están vivos y visibles",
+      "El jungla enemigo está muerto o lejos del mapa",
+      "Tu equipo no tiene visión",
+      "No hay oleadas presionando"
+    ],
     "correctAnswer": 1,
-    "explanation": "Tristana gana alcance adicional con cada nivel."
+    "explanation": "Sin el jungla enemigo cerca, el riesgo de robo del objetivo disminuye considerablemente."
   },
   {
     "id": "q10",
-    "category": "Objetivos",
+    "category": "Micro",
     "difficulty": "hard",
-    "question": "¿Cuántas almas de dragón elementales existen actualmente?",
-    "options": ["3", "4", "5", "6"],
-    "correctAnswer": 3,
-    "explanation": "Existen 6 almas elementales diferentes."
+    "question": "¿Qué técnica permite cancelar animaciones para optimizar el DPS con ciertos campeones?",
+    "options": [
+      "Orb walking o kiting",
+      "Face checking",
+      "AFK farming",
+      "Backdoor pasivo"
+    ],
+    "correctAnswer": 0,
+    "explanation": "El orb walking combina movimiento y ataques para maximizar daño mientras mantienes posicionamiento seguro."
   }
 ]
