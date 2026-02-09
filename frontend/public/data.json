@@ -1,72 +1,100 @@
 [
   {
     "id": "q1",
-    "category": "Jugabilidad",
-    "difficulty": "medium",
-    "question": "¿Qué ventaja ofrece empujar una oleada antes de rotar hacia el dragón?",
+    "category": "Lore",
+    "difficulty": "hard",
+    "question": "¿Qué relación une a Jinx y Vi dentro del lore oficial de League of Legends?",
     "options": [
-      "Reduce el daño del dragón",
-      "Genera presión en línea y obliga al rival a defender",
-      "Aumenta el oro del jungla",
-      "Evita que el enemigo use hechizos"
+      "Son primas lejanas",
+      "Fueron rivales desde pequeñas sin vínculo familiar",
+      "Son hermanas con un pasado trágico en Zaun",
+      "Fueron maestras y alumnas en Piltover"
     ],
-    "correctAnswer": 1,
-    "explanation": "Empujar la oleada obliga al enemigo a decidir entre perder súbditos o disputar el objetivo."
+    "correctAnswer": 2,
+    "explanation": "Jinx y Vi son hermanas provenientes de Zaun, con una relación marcada por eventos traumáticos de su infancia."
   },
   {
     "id": "q2",
-    "category": "Roles",
+    "category": "Lore",
     "difficulty": "medium",
-    "question": "¿Cuál es la función principal de un soporte de tipo 'engage'?",
+    "question": "¿A qué región pertenece Yasuo originalmente dentro del universo de Runaterra?",
     "options": [
-      "Farmear súbditos constantemente",
-      "Iniciar peleas y crear oportunidades para el equipo",
-      "Dividir presión en solitario",
-      "Eliminar objetivos neutrales rápidamente"
+      "Noxus",
+      "Ionia",
+      "Demacia",
+      "Freljord"
     ],
     "correctAnswer": 1,
-    "explanation": "Los soportes engage buscan iniciar peleas y controlar enemigos para facilitar eliminaciones."
+    "explanation": "Yasuo es un espadachín originario de Ionia, donde fue entrenado antes de ser acusado injustamente."
   },
   {
     "id": "q3",
-    "category": "Visión",
-    "difficulty": "medium",
-    "question": "¿Dónde es más común colocar guardianes para evitar emboscadas del jungla en fase de líneas?",
+    "category": "Lore",
+    "difficulty": "hard",
+    "question": "¿Quién fue responsable indirectamente de la muerte del maestro de Yasuo según la historia oficial?",
     "options": [
-      "Base aliada",
-      "Río y entradas de la jungla cercana",
-      "Detrás de tu torre interior",
-      "Centro de la base enemiga"
+      "Riven",
+      "Yone",
+      "Swain",
+      "Zed"
     ],
-    "correctAnswer": 1,
-    "explanation": "Los wards en el río y entradas de jungla ayudan a anticipar ganks."
+    "correctAnswer": 0,
+    "explanation": "Riven estuvo involucrada en el evento que terminó con la muerte del maestro, lo que llevó a Yasuo a ser acusado."
   },
   {
     "id": "q4",
-    "category": "Objetivos",
+    "category": "Lore",
     "difficulty": "medium",
-    "question": "¿Qué ventaja otorga destruir la primera torre del mapa?",
+    "question": "¿Qué entidad antigua está vinculada al origen y poder de Aurelion Sol?",
     "options": [
-      "Visión permanente del mapa",
-      "Oro adicional global para el equipo",
-      "Respawn más rápido",
-      "Eliminación de súbditos enemigos"
+      "Los Aspectos de Targon",
+      "El Vacío",
+      "Los Yordles ancestrales",
+      "La Niebla Negra"
     ],
-    "correctAnswer": 1,
-    "explanation": "La primera torre concede oro extra global, acelerando la ventaja económica."
+    "correctAnswer": 0,
+    "explanation": "Aurelion Sol fue engañado por los Aspectos de Targon, quienes limitaron su libertad mediante una corona mágica."
   },
   {
     "id": "q5",
-    "category": "Mecánicas",
-    "difficulty": "medium",
-    "question": "¿Qué técnica consiste en atacar y moverse repetidamente para mantener distancia mientras haces daño?",
+    "category": "Lore",
+    "difficulty": "hard",
+    "question": "¿Qué evento catastrófico está directamente relacionado con la creación de la Niebla Negra y campeones como Thresh y Hecarim?",
     "options": [
-      "Face check",
-      "Freeze",
-      "Kiting",
-      "Split push"
+      "La Ruina",
+      "La Gran Guerra de Ionia",
+      "La Rebelión de Zaun",
+      "El Ascenso del Vacío"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La Ruina transformó las Islas Bendecidas en las Islas de la Sombra y dio origen a la Niebla Negra."
+  },
+  {
+    "id": "q6",
+    "category": "Lore",
+    "difficulty": "medium",
+    "question": "¿Qué vínculo existe entre Garen y Lux dentro del lore de Demacia?",
+    "options": [
+      "Son enemigos políticos",
+      "Son hermanos pertenecientes a la familia Crownguard",
+      "Fueron rivales en la academia militar",
+      "No tienen relación directa"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Garen y Lux son hermanos de la noble familia Crownguard en Demacia."
+  },
+  {
+    "id": "q7",
+    "category": "Lore",
+    "difficulty": "hard",
+    "question": "¿Qué campeona es conocida como la líder rebelde que lucha contra el uso opresivo de la magia en Demacia?",
+    "options": [
+      "Fiora",
+      "Shyvana",
+      "Sylas",
+      "Quinn"
     ],
     "correctAnswer": 2,
-    "explanation": "El kiting permite maximizar daño mientras mantienes una posición segura."
+    "explanation": "Sylas lidera una rebelión contra la opresión mágica en Demacia tras haber sido encarcelado por sus poderes."
   }
 ]
