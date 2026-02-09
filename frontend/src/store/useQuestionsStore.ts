@@ -44,8 +44,8 @@ export const useQuestionStore = create<questionStore>((set, get) => {
       const questionIndex = newQuestion.findIndex((q) => q.id == id);
       //devolver pregunta actual
       const questionInfo = newQuestion[questionIndex];
-      //encontrar pregunta correcta
-      const isCorrectAnswer = questionInfo.correctAnswer == questionIndex;
+      //encontrar pregunta correcta - compare selected index with correct answer
+      const isCorrectAnswer = questionInfo.correctAnswer === index;
       //cambiar info en la copia de la pregunta
       newQuestion[questionIndex] = {
         ...questionInfo,

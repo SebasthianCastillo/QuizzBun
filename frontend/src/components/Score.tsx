@@ -4,7 +4,7 @@ import { useQuestionStore } from "../store/useQuestionsStore";
 import { Trophy, Target, RotateCcw } from "lucide-react";
 import { useEffect, useState } from "react";
 
-export default function Score() {
+export default function Score({ scoreJustSaved = false }: { scoreJustSaved?: boolean }) {
   const questions = useQuestionStore((state) => state.questions);
   const name = useQuestionStore((state) => state.name);
   const resetGame = useQuestionStore((state) => state.resetGame);
@@ -38,8 +38,14 @@ export default function Score() {
   };
 
   useEffect(() => {
-    getUser();
-  }, []);
+    // Add a small delay if score was just saved to ensure database consistency
+    const delay = scoreJustSaved ? 500 : 0;
+    const timer = setTimeout(() => {
+      getUser();
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [scoreJustSaved]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
@@ -96,9 +102,9 @@ export default function Score() {
             </div>
           </CardContent>
           <div className="mt-6">
-            <h3 className="text-lg font-semibold text-white mb-3">Previous Scores</h3>
+            <h3 className="text-lg font-semibold text-white mb-3">resultados anteriores</h3>
             {loading ? (
-              <p className="text-purple-200">Loading scores...</p>
+              <p className="text-purple-200">cargando resultados</p>
             ) : scores.length > 0 ? (
               <div className="space-y-2">
                 {scores.map((score: { id: number; name: string; score: string }) => (
@@ -109,7 +115,7 @@ export default function Score() {
                 ))}
               </div>
             ) : (
-              <p className="text-purple-200">No scores yet. Be the first!</p>
+              <p className="text-purple-200">No resultados</p>
             )}
           </div>
         </Card>
