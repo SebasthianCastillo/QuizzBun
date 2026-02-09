@@ -1,142 +1,72 @@
 [
   {
     "id": "q1",
-    "category": "Macro",
-    "difficulty": "hard",
-    "question": "¿Cuál es la razón estratégica principal para hacer 'slow push' antes de rotar a un objetivo neutral?",
+    "category": "Jugabilidad",
+    "difficulty": "medium",
+    "question": "¿Qué ventaja ofrece empujar una oleada antes de rotar hacia el dragón?",
     "options": [
-      "Para evitar que los súbditos den experiencia",
-      "Para crear presión en el mapa y forzar respuesta enemiga",
-      "Para que el jungla consiga más oro",
-      "Para reiniciar la oleada rápidamente"
+      "Reduce el daño del dragón",
+      "Genera presión en línea y obliga al rival a defender",
+      "Aumenta el oro del jungla",
+      "Evita que el enemigo use hechizos"
     ],
     "correctAnswer": 1,
-    "explanation": "El slow push acumula súbditos y genera presión en la línea, obligando al enemigo a defender mientras tu equipo rota a objetivos."
+    "explanation": "Empujar la oleada obliga al enemigo a decidir entre perder súbditos o disputar el objetivo."
   },
   {
     "id": "q2",
-    "category": "Mecánicas",
-    "difficulty": "hard",
-    "question": "¿Qué ocurre cuando aplicas múltiples efectos de control de masas del mismo tipo con rendimientos decrecientes?",
+    "category": "Roles",
+    "difficulty": "medium",
+    "question": "¿Cuál es la función principal de un soporte de tipo 'engage'?",
     "options": [
-      "Se duplican en duración",
-      "El segundo se ignora completamente",
-      "Se reduce progresivamente la duración",
-      "Se convierten en daño verdadero"
+      "Farmear súbditos constantemente",
+      "Iniciar peleas y crear oportunidades para el equipo",
+      "Dividir presión en solitario",
+      "Eliminar objetivos neutrales rápidamente"
     ],
-    "correctAnswer": 2,
-    "explanation": "Algunos efectos de control repetidos sufren rendimientos decrecientes, reduciendo su duración efectiva."
+    "correctAnswer": 1,
+    "explanation": "Los soportes engage buscan iniciar peleas y controlar enemigos para facilitar eliminaciones."
   },
   {
     "id": "q3",
-    "category": "Vision",
-    "difficulty": "hard",
-    "question": "¿Cuál es el propósito principal de colocar visión profunda en la jungla enemiga durante mid game?",
+    "category": "Visión",
+    "difficulty": "medium",
+    "question": "¿Dónde es más común colocar guardianes para evitar emboscadas del jungla en fase de líneas?",
     "options": [
-      "Solo obtener asistencias",
-      "Rastrear rotaciones y preparar picks o objetivos",
-      "Evitar que aparezcan monstruos neutrales",
-      "Aumentar el daño del equipo"
+      "Base aliada",
+      "Río y entradas de la jungla cercana",
+      "Detrás de tu torre interior",
+      "Centro de la base enemiga"
     ],
     "correctAnswer": 1,
-    "explanation": "La visión profunda permite anticipar movimientos enemigos y preparar emboscadas u objetivos."
+    "explanation": "Los wards en el río y entradas de jungla ayudan a anticipar ganks."
   },
   {
     "id": "q4",
-    "category": "Wave Management",
-    "difficulty": "hard",
-    "question": "¿Qué condición suele ser necesaria para mantener un freeze cerca de tu torre?",
+    "category": "Objetivos",
+    "difficulty": "medium",
+    "question": "¿Qué ventaja otorga destruir la primera torre del mapa?",
     "options": [
-      "Tener más súbditos que el rival",
-      "Eliminar todos los súbditos magos",
-      "Mantener una ligera desventaja de súbditos enemigos",
-      "Usar habilidades constantemente"
+      "Visión permanente del mapa",
+      "Oro adicional global para el equipo",
+      "Respawn más rápido",
+      "Eliminación de súbditos enemigos"
     ],
-    "correctAnswer": 2,
-    "explanation": "Un freeze se mantiene dejando más súbditos enemigos vivos para que la oleada permanezca cerca de tu torre."
+    "correctAnswer": 1,
+    "explanation": "La primera torre concede oro extra global, acelerando la ventaja económica."
   },
   {
     "id": "q5",
-    "category": "Objetos",
-    "difficulty": "hard",
-    "question": "¿Qué ventaja principal aporta la penetración de armadura porcentual frente a objetivos con mucha defensa?",
+    "category": "Mecánicas",
+    "difficulty": "medium",
+    "question": "¿Qué técnica consiste en atacar y moverse repetidamente para mantener distancia mientras haces daño?",
     "options": [
-      "Reduce la velocidad de ataque enemiga",
-      "Ignora un porcentaje de la armadura total",
-      "Aumenta el robo de vida",
-      "Convierte daño físico en mágico"
-    ],
-    "correctAnswer": 1,
-    "explanation": "La penetración porcentual escala mejor contra enemigos con altos valores de armadura."
-  },
-  {
-    "id": "q6",
-    "category": "Macro",
-    "difficulty": "hard",
-    "question": "¿Cuál es el riesgo principal de hacer split push sin visión adecuada del mapa?",
-    "options": [
-      "Perder experiencia pasiva",
-      "Forzar objetivos neutrales automáticamente",
-      "Ser colapsado por múltiples enemigos",
-      "Reducir el daño a torres"
+      "Face check",
+      "Freeze",
+      "Kiting",
+      "Split push"
     ],
     "correctAnswer": 2,
-    "explanation": "Sin visión, el split pusher puede ser rodeado fácilmente por rotaciones enemigas."
-  },
-  {
-    "id": "q7",
-    "category": "Teamfights",
-    "difficulty": "hard",
-    "question": "¿Qué significa 'peel' en una pelea de equipo?",
-    "options": [
-      "Ignorar al carry enemigo",
-      "Proteger a tus aliados clave del daño o engages",
-      "Dividir al equipo en dos grupos",
-      "Iniciar la pelea con todo el equipo"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Peel consiste en usar habilidades para mantener a salvo a tus carries de amenazas enemigas."
-  },
-  {
-    "id": "q8",
-    "category": "Jungla",
-    "difficulty": "hard",
-    "question": "¿Qué ventaja estratégica ofrece un 'counter jungle' exitoso en early game?",
-    "options": [
-      "Reduce el cooldown de habilidades",
-      "Niega recursos al rival y crea ventaja de tempo",
-      "Aumenta la vida máxima del equipo",
-      "Revela permanentemente al jungla enemigo"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Robar campamentos reduce el oro y experiencia del jungla rival y acelera tu ventaja."
-  },
-  {
-    "id": "q9",
-    "category": "Objetivos",
-    "difficulty": "hard",
-    "question": "¿Cuál es una señal común para iniciar Barón Nashor con seguridad relativa?",
-    "options": [
-      "Todos los enemigos están vivos y visibles",
-      "El jungla enemigo está muerto o lejos del mapa",
-      "Tu equipo no tiene visión",
-      "No hay oleadas presionando"
-    ],
-    "correctAnswer": 1,
-    "explanation": "Sin el jungla enemigo cerca, el riesgo de robo del objetivo disminuye considerablemente."
-  },
-  {
-    "id": "q10",
-    "category": "Micro",
-    "difficulty": "hard",
-    "question": "¿Qué técnica permite cancelar animaciones para optimizar el DPS con ciertos campeones?",
-    "options": [
-      "Orb walking o kiting",
-      "Face checking",
-      "AFK farming",
-      "Backdoor pasivo"
-    ],
-    "correctAnswer": 0,
-    "explanation": "El orb walking combina movimiento y ataques para maximizar daño mientras mantienes posicionamiento seguro."
+    "explanation": "El kiting permite maximizar daño mientras mantienes una posición segura."
   }
 ]
